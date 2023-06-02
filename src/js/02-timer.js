@@ -62,7 +62,7 @@ function timerPlay() {
     minute.textContent = addLeadingZero(minutes);
     second.textContent = addLeadingZero(seconds);
 
-    if (differentTime < 0) {
+    if (differentTime <= 0) {
       clearInterval(timerId);
       day.textContent = "00";
       hour.textContent = "00";
