@@ -49,7 +49,7 @@ function changeDate() {
 function timerPlay() {
   
   input.disabled = true;
-  timerId = setInterval(() => {
+  const timerId = setInterval(() => {
       const selectedDay = input._flatpickr.selectedDates[0];
     const currentDay = Date.now();
     const differentTime = selectedDay - currentDay;
